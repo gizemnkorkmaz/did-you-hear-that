@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f0f0;
+  font-family: "Amatic SC", cursive;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 40px;
+}
+.header__finished-title {
+  font-size: 45px;
+  color: green;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 25px;
+  }
+}
+
+.game-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  margin: 10px;
+}
+@media screen and (max-width: 480px) {
+  .game-stats {
+    font-size: 15px;
+  }
+}
+.game-stats__time {
+  padding: 0 10px;
+}
+.game-stats__click-count {
+  padding: 0 10px;
+}
+.game-stats__buttons > button {
+  background-color: #f1f0f0;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  width: 70px;
+  height: 35px;
+  border: 1px solid black;
+}
+@media screen and (max-width: 480px) {
+  .game-stats__buttons > button {
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+  }
+}
+.game-stats__buttons > button:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 25px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.game-cards__container {
+  cursor: pointer;
+  position: relative;
+}
+.game-cards__container img {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 480px) {
+  .game-cards__container img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.game-cards__container img:hover {
+  border: 2px solid yellowgreen;
+}
+
+.matched {
+  display: block;
+  border: 4px solid #0eb40e;
+  border-radius: 16px;
+}
+
+.unmatched {
+  position: absolute;
+  background-color: #f1f0f0;
+}
+
+.matched .unmatched {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

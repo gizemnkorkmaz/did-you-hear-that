@@ -1,0 +1,96 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  &__title {
+    text-align: center;
+    font-size: 40px;
+  }
+  &__finished-title {
+    font-size: 45px;
+    color: green;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 25px;
+  }
+}
+
+.game-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  margin: 10px;
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+  &__time {
+    padding: 0 10px;
+  }
+  &__click-count {
+    padding: 0 10px;
+  }
+  &__buttons > button {
+    background-color: $home-bgcolor;
+    font-family: "Amatic SC", cursive;
+    font-size: 20px;
+    width: 70px;
+    height: 35px;
+    border: 1px solid $border-color;
+    @media screen and (max-width: 480px) {
+      width: 60px;
+      height: 20px;
+      font-size: 15px;
+    }
+    &:hover {
+      border: 2px solid $border-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 25px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  &__container {
+    cursor: pointer;
+    position: relative;
+    img {
+      border: 1px solid $border-color;
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      @media screen and (max-width: 480px) {
+        width: 60px;
+        height: 60px;
+      }
+      &:hover {
+        border: 2px solid yellowgreen;
+      }
+    }
+  }
+}
+
+.matched {
+  display: block;
+  border: 4px solid rgb(14, 180, 14);
+  border-radius: 16px;
+}
+
+.unmatched {
+  position: absolute;
+  background-color: $home-bgcolor;
+}
+
+.matched .unmatched {
+  display: none;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <title>Did you hear that?!</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="header__title">Did You Hear That!</h1>
+      </header>
+      <div class="game-stats">
+        <div class="game-stats__time">
+          Time: <span class="initial-time">0</span>
+        </div>
+        <div class="game-stats__click-count">
+          Clicks: <span class="clicks">0</span>
+        </div>
+        <div class="game-stats__buttons">
+          <button class="start-btn">Start!</button>
+          <button class="reset-btn">Reset!</button>
+        </div>
+      </div>
+      <div class="game-cards">
+        <!-- the first 8 cards -->
+        <div class="game-cards__container" data-cardNumber="1">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/1.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="2">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/2.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="3">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/3.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="4">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/4.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="5">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/5.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="6">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/6.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="7">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/7.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="8">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/8.mp3" class="audio"></audio>
+        </div>
+        <!-- the second 8 cards -->
+        <div class="game-cards__container" data-cardNumber="8">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/8.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="7">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/7.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="6">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/6.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="5">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/5.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="4">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/4.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="3">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/3.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="2">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/2.mp3" class="audio"></audio>
+        </div>
+        <div class="game-cards__container" data-cardNumber="1">
+          <img
+            src="./assets/images/unmatched.jpg"
+            alt="unmatched-card"
+            class="unmatched"
+          />
+          <img
+            src="./assets/images/matched.png"
+            alt="matched-card"
+            class="matched"
+          />
+          <audio src="./assets/sounds/1.mp3" class="audio"></audio>
+        </div>
+      </div>
+    </main>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
